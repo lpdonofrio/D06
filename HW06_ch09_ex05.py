@@ -29,8 +29,6 @@ def all_vowels():
         print("File not found")
     count_vowels = 0
     count_y = 0
-    count_vow = []
-    count_yy = []
     for line in fin:
         if uses_all(line, "aeiou"):
             count_vowels += 1
