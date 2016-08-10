@@ -14,11 +14,24 @@
 # Imports
 
 # Body
+def has_no_e(word):
+        if "e" not in word and "E" not in word:
+            return True
+
+def print_no_e():
+    try:
+        fin = open("words.txt")
+    except:
+        print("File did not open")
+    for line in fin:
+        if has_no_e(line):
+            print(line.strip())
 
 
 ##############################################################################
 def main():
-    pass  # Call your function(s) here.
+    
+    print_no_e()
 
 if __name__ == '__main__':
     main()
